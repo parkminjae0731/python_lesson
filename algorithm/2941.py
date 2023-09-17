@@ -1,8 +1,8 @@
 a = input()
-target = ["a!", "b@"]
+target = ["c=", "c-","dz=","d-","lj","nj","s=","z="]
 
 for item in target:
     while item in a:
-        a = a.replace(item, '')
+        a = a.replace(item, '_')
 
-print(a)
+print(len(a))
