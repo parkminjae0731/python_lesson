@@ -1,7 +1,7 @@
+c=20
 e=0
 a=[0]*20
-c=20
-for i in range(20):
+for i in range(c):
     a[i]=input()
     if "A+" in a[i]:
         e+=4.5
