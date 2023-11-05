@@ -1,24 +1,14 @@
 a,b=map(int,input().split())
-sample1 = ["WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW"]
-sample2 = ["BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB"]
-d=0
-
+origin = []
+sample1 = ["WBWBWBWB","BWBWBWBW","WBWBWBWB","BWBWBWBW","WBWBWBWB","BWBWBWBW","WBWBWBWB","BWBWBWBW"]
+sample2 = ["BWBWBWBW","WBWBWBWB","BWBWBWBW","WBWBWBWB","BWBWBWBW","WBWBWBWB","BWBWBWBW","WBWBWBWB"]
 for i in range(a):
-    c=input()
-    while True:
-        if "WB" in c:
-            d+=c.count("WB")
-            c.replace("WB","")
-        else :
-            break
+    origin.append(input())
+
+for i in range(a-8):
+    for j in range(b-8):
+        for r in range(i, i+8):
+            for c in range(j, j+8):
+                print(sample1[r]) #(origin[r][c])
+            
         
-        
-    while True:
-        if "BW" in c:
-            d+=c.count("BW")
-            c.replace("BW","")
-        else :
-            break
-        
-        
-print(d)
